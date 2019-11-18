@@ -1,0 +1,14 @@
+{
+  "name": "vuegame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.3.0",
+    "rollup": "^1.27.2"
+  },
+  "scripts": {
+    "start": "lite-server"
+  }
+
+}
