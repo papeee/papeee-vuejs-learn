@@ -1,30 +1,25 @@
 <html>
 <head>
-  <title>Hello World</title>
+  <title>Wild Animal World</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="main.js"></script>
+<script>
+</script>
 </head>
-  <body style="background-color:#333;">
+  <body>
+    <header><h2>Wild Animals</h2></header>
     <section>
-    <div style="margin-left: 35%;margin-top: 20%;color:#5a7" id="app-1">
-      
-        <div v-for="todo in todos">
-        <h2>{{ todo.text }}</h2>
+    <div style="margin-left: 20%">
+        <div id="app-1">
+            <h3>{{ text }}</h3>
+         
         </div>
-      
     </div>
-
-    <script>
-      var app1 = new Vue({
-        el: '#app-1',
-        data: {
-          todos: [
-            { text: 'Hello World is built on HTML & Vue' }
-          ]
-          
-        } 
-        
-      })
-    </script>
-    </section>
+ 
+   </section>
+   <p>Pixabay License 
+      Free for commercial use
+       </p>
   </body>
 </html>
