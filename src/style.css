@@ -1,0 +1,114 @@
+body{
+  border-block-end-color: darkolivegreen 10px;
+}
+
+.elephants{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(elephants.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.giraffes{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(giraffes.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.hippos{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(hippos.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.horses{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(horses.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.lions{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(lions.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.lynx{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(lynx.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.penguins{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(penquins.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.rhinos{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(rhinos.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.tiger{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(tiger.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.wolves{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(wolves.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+.zepras{
+  min-width: 800px;
+  min-height: 600px;
+  background-image: url(zepras.jpg);
+  background-size: cover;
+  border-left: yellow, 10px;
+  border-bottom: yellow, 10px;
+}
+
+
+header{
+  padding-left: 40%;
+  min-width: 99%;
+  margin-right: 3%;
+  background-color: mediumseagreen;
+}
+
+p{
+  color: rgb(78, 77, 77);
+}
