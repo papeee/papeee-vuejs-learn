@@ -4,5 +4,10 @@ export default {
         file: './build/bundle.min.js',
         format: 'iife',
         name: 'bundle'
-    }
+    },
+    plugins: [
+        babel({
+            exclude: 'node_modules/**'
+        })
+    ]
 }
