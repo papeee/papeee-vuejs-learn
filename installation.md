@@ -53,4 +53,29 @@ yarn run build
 
 - It installed 4 packages and saved dependies for them
 
-yarn install rollup --save-dev
+### Babel for RollUp
+
+- Babel makes code to be support for older browsers
+
+yarn add @babel/core @babel/preset-env rollup-plugin-babel --save-dev
+
+- it saved 91 dependencies
+
+#### Configured rollup.config.js for babel
+
+- import babel from 'rollup-plugin-babel';
+
+  ,plugins: plugins: [ babel ({ exclude: 'node_modules/**' }) ]
+
+- Build bundle.min.js again that come different bundle.min.js
+
+yarn run build
+
+- makes new bundle.min.js
+
+#### Install nonES module handling
+
+- can use third-party modules
+- module converts into ES6 version
+
+yarn add rollup-plugin-node-resolve ollup-plugin-commonjs --save-dev
