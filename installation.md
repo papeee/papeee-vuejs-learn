@@ -79,3 +79,29 @@ yarn run build
 - module converts into ES6 version
 
 yarn add rollup-plugin-node-resolve ollup-plugin-commonjs --save-dev
+
+### Third-Party library example
+
+- Lodash makes JavaScript easier with arrays, numbers, objects, strings
+
+yarn add lodash --save-dev
+
+#### Added rollup.config.js
+
+- import resolve from 'rollup-plugin-node-resolve';
+- import commonjs from 'rollup-plugin-commonjs';
+
+- inside output
+    globals: {
+            'lodash': '_',
+        }
+
+- inside plugins
+    resolve(),
+    commonjs()
+
+#### Added main.js
+
+- import _ from 'lodash';
+
+- const arr = _.concat([1, 2, 3], 4, [5]);
