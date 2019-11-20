@@ -1,5 +1,7 @@
 # Installation guide for Lite-Server, Node modules and RollUp
 
+ Also includes experience from installations
+
 ## Install Yarn if not
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -76,7 +78,7 @@ yarn run build
 #### Install nonES module handling
 
 - can use third-party modules
-- module converts into ES6 version
+- module converts into JavaScript ES6 version
 
 yarn add rollup-plugin-node-resolve ollup-plugin-commonjs --save-dev
 
@@ -105,3 +107,58 @@ yarn add lodash --save-dev
 - import _ from 'lodash';
 
 - const arr = _.concat([1, 2, 3], 4, [5]);
+
+## Compress to minimize output
+
+### Uglity plugin
+
+- makes bundle more readable
+
+yarn add rollup-plugin-uglify --save-dev
+
+- it saved 6 dependencies
+
+#### 4th time to edit rollup-config.js
+
+- Edit for uglity
+
+#### Added
+
+- import { uglify } from 'rollup-plugin-uglify';
+
+#### Inside plugin
+
+ ,uglify()
+
+ yarn run build
+
+- built done in 15s
+- Now bundle.min.js is more readable
+
+### Terser
+
+- removed babel and uglity & added terser plugin
+- also from package.json
+
+yarn add rollup-plugin-terser --dev
+
+- saved 6 dependencies
+
+#### 5th edit to rollup.config.js
+
+- edit for terser
+
+#### Added import line
+
+import { terser } from 'rollup-plugin-terser'
+
+#### Added outside from block to end
+
+rollup({
+  input: "./src/main.js",
+  plugins: [terser()]
+});
+
+yarn run build
+
+- built done in 12s
