@@ -4,12 +4,16 @@
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "lite-server": "^2.3.0",
-    "rollup": "^1.27.2"
+    "rollup": "^1.27.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "scripts": {
     "start": "lite-server",
     "build": "rollup -c"
   }
-
 }
