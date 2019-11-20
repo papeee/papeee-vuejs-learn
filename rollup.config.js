@@ -1,7 +1,7 @@
-import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import { uglify } from 'rollup-plugin-uglify';
+import { rollup } from "rollup";
+import { terser } from "rollup-plugin-terser";
 
 export default {
     input: './src/main.js',
@@ -13,12 +13,14 @@ export default {
           'lodash': '_',
       }
     },
+    
     plugins: [
-        babel({
-            exclude: 'node_modules/**'
-        }),
         resolve(),
         commonjs(),
-        uglify()
+        terser()
     ]
 }
+rollup({
+  input: "./src/main.js",
+  plugins: [terser()]
+});
