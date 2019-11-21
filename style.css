@@ -2,23 +2,10 @@ body{
   border-block-end-color: darkolivegreen 10px;
 }
 
-.red{
-  color: red
-}
-.blue{
-  color: blue;
-}
-.green{
-  color: green;
-}
-.yellow{
-  color: yellow;
-}
-
 .elephants{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(elephants.jpg);
+  background-image: url(pics/elephants.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -27,7 +14,7 @@ body{
 .giraffes{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(giraffes.jpg);
+  background-image: url(pics/giraffes.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -36,7 +23,7 @@ body{
 .hippos{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(hippos.jpg);
+  background-image: url(pics/hippos.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -45,7 +32,7 @@ body{
 .horses{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(horses.jpg);
+  background-image: url(pics/horses.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -54,7 +41,7 @@ body{
 .lions{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(lions.jpg);
+  background-image: url(pics/lions.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -63,7 +50,7 @@ body{
 .lynx{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(lynx.jpg);
+  background-image: url(pics/lynx.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -72,7 +59,7 @@ body{
 .penguins{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(penquins.jpg);
+  background-image: url(pics/penquins.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -81,7 +68,7 @@ body{
 .rhinos{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(rhinos.jpg);
+  background-image: url(pics/rhinos.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -90,7 +77,7 @@ body{
 .tiger{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(tiger.jpg);
+  background-image: url(pics/tiger.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -99,7 +86,7 @@ body{
 .wolves{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(wolves.jpg);
+  background-image: url(pics/wolves.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
@@ -108,7 +95,7 @@ body{
 .zepras{
   min-width: 800px;
   min-height: 600px;
-  background-image: url(zepras.jpg);
+  background-image: url(pics/zepras.jpg);
   background-size: cover;
   border-left: yellow, 10px;
   border-bottom: yellow, 10px;
