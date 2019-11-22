@@ -162,3 +162,31 @@ rollup({
 yarn run build
 
 - built done in 12s
+
+### Vue-cli
+
+vue-cli build products to bundle in the dist/ directory, with minification for JS , CSS , HTML.
+It ensures the various build tools work smoothly together with sensible defaults.
+
+- tried install @vue-cli but returned 405 error
+
+yarn add vue-cli
+
+- saved 161 dependencies
+- install done in 1min 34s
+
+### Rollup plugin vue
+
+This plugin allows you to author Vue components in same file
+
+yarn add rollup-plugin-vue
+
+- saved 68 dependencies
+- install done in 1min 53s
+
+#### vue-template-compiler
+
+yarn add vue-template-compiler
+
+- saved 3 dependencies
+- install done in 34s
