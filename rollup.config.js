@@ -1,7 +1,10 @@
+import vue from 'rollup-plugin-vue';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import { rollup } from "rollup";
-import { terser } from "rollup-plugin-terser";
+import less from 'rollup-plugin-less';
+import buble from 'rollup-plugin-buble';
+//import browsersync from 'rollup-plugin-browsersync';
+//import { terser } from "rollup-plugin-terser";
 
 export default {
     input: './src/main.js',
@@ -10,17 +13,19 @@ export default {
         format: 'iife',
         name: 'bundle',
         globals: {
-          'lodash': '_',
+          'lodash': '_'
       }
     },
-    
+        
     plugins: [
+        vue({'css':'none'}),
+        less({output: "dist/minstyle.css"}),
+        buble({exclude: 'node_modules/**'}),
         resolve(),
         commonjs(),
-        terser()
+        replace({
+          'process.env.NODE_ENV': JSON.stringify( 'production' )
+        }) 
     ]
 }
-rollup({
-  input: "./src/main.js",
-  plugins: [terser()]
-});
+
