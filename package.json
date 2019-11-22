@@ -1,6 +1,6 @@
 {
   "name": "papeee-vuejs-learn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
@@ -10,13 +10,13 @@
     "lodash": "^4.17.15",
     "rollup": "^1.27.2",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-vue": "^5.1.4",
+    "vue-cli": "^2.9.6",
+    "vue-template-compiler": "^2.6.10"
   },
   "scripts": {
-    "start": "lite-server",
-    "build": "rollup -c"
-  },
-  "devDependencies": {
-    "rollup-plugin-terser": "^5.1.2"
+    "build": "rollup -c",
+    "start": "lite-server"
   }
 }
