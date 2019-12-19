@@ -1,0 +1,98 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  <script>
+  import vue from 'vue'
+  </script>
+  </head>
+  <body>
+  <section>
+  
+  <div v-bind:style="{ fontSize: 20 + 'px' }">Binding Text & Style</div>
+  
+  <h1 v-bind:style="{ display: ['flexbox', 'flex'] }">Cloud Services</h1>
+
+  <div id="app-1">
+    <h2 v-bind:style="styleObject">{{ text }}</h2>
+    <p class="classObject"></p>
+    <div v-if="Math.random() > 0.5">Now you need</div>
+      <div v-else>
+        Then you don't need
+      </div>
+  </div>
+
+<div id="app-2">
+  <a v-bind:style="styleObject">G</a><a v-bind:style="nextStyleObj"> C</a> <a v-bind:style="nextnextStyleObj">lou</a><a v-bind:style="lastStyleObj">d</a>
+  <h2 v-bind:style="otherStyleObj"> {{ text }} </h2>
+</div>
+
+<div id="app-3">
+  <div v-for="item in items">
+   {{ item.message }}
+  </div>
+</div>
+
+  <script>
+    var app1 = new Vue({
+    el: '#app-1',
+    data: {
+      fontSize: 20,
+      text: "Microsoft Azure",
+      styleObject:{
+        color: 'navy'
+      }
+    },
+    classObject: function () {
+      return {
+        text: "Test"
+      }
+    }
+  })
+  </script>
+
+<script>
+  var app2 = new Vue({
+    el: '#app-2',
+    data: {
+      styleObject: {
+      color: 'red',
+      fontSize: '25px'
+    },
+      nextStyleObj:{
+        color: 'yellow',
+      fontSize: '25px'
+      },
+      nextnextStyleObj:{
+        color: 'blue',
+      fontSize: '25px'
+      },
+      lastStyleObj:{
+        color: 'green',
+      fontSize: '25px'
+      },
+      otherStyleObj: {
+        color: 'orange',
+      fontSize: '25px'
+      },
+    text: "Amazon Web Services"
+    }
+})
+</script>
+
+<script>
+  var app3 = new Vue({
+    el: '#app-3',
+    data: {
+      items: [
+      { message: 'Lists in Vue'},
+      { message: 'Pasi Rautiainen'},
+      { message: '19.12.2019'}
+      ]
+    }
+  })
+</script>
+</section>
+
+</body>
+</html>
