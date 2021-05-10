@@ -7,7 +7,7 @@
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "lite-server": "^2.3.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "rollup": "^1.27.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
